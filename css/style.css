@@ -180,3 +180,90 @@ nav ul li:hover > ul {
     transform: scale(1.05);
     transition: .8s;
 }
+
+/*-------------------------------MOVIE--------------------------------*/
+.movie {
+    position: relative;
+    height: 400px;
+    animation: colorchange 15s ease infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        background: #66b8c4;
+    }
+
+    25% {
+        background: #72d6c9;
+    }
+
+    50% {
+        background: #f29cd9;
+    }
+
+    75% {
+        background: #e00986;
+    }
+
+    100% {
+        background: #fbb619;
+    }
+}
+
+.single-movie {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*-------------------------------ICONS--------------------------------*/
+.icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 40px auto;
+}
+
+.icon {
+    display: block;
+    height: 200px;
+    text-align: center;
+    -webkit-box-shadow: 4px 4px 15px 1px rgba(115, 177, 191, 0.75);
+    -moz-box-shadow: 4px 4px 15px 1px rgba(115, 177, 191, 0.75);
+    box-shadow: 4px 4px 15px 1px rgba(115, 177, 191, 0.75);
+    padding: 10px 60px;
+}
+
+.icon i {
+    font-size: 40px;
+    color: #448a98;
+    padding: 20px 15px 5px 15px;
+}
+
+i.fas,
+i.fab {
+    border: none !important;
+}
+
+.icon p {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.icon p span {
+    font-size: 18px;
+}
+/*-----------------------------------------------------------*/
+footer {
+    background: #2C3E50;
+    background-image: linear-gradient(to right, #4CA1AF, #2C3E50);
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 0 3px;
+}
